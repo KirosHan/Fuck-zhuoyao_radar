@@ -74,7 +74,7 @@ module.exports = {
                 return [lng * 2 - mglng, lat * 2 - mglat]
             }
         },
-          
+
         gcj02tobd09: function (lng, lat) {
            var x_PI = 3.14159265358979324 * 3000.0 / 180.0;
             var PI = 3.1415926535897932384626;
@@ -182,8 +182,10 @@ module.exports = {
                 info.open();
                 lastinfo = info
                 info.setContent('<div style="text-align:center;white-space:nowrap;' +
-                    'margin:10px;"><textarea type="text" style="margin: 0px; width: 184px; height: 31px;">' + str + '</textarea><textarea type="text" style="margin: 0px; width: 184px; height: 31px;">' + str2 + '</textarea></div>');
+                    'margin:10px;"><textarea type="text" style="margin: 0px; width: 184px; height: 31px;">' + str2 + '</textarea></div>');
                 info.setPosition(position);
+
+                window.external.radarposition(bbbbb[0], bbbbb[1]);
             });
       marker.setIcon(icon);
       this.markers.push(marker);

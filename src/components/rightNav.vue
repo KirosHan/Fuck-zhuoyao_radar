@@ -20,7 +20,6 @@
         <div class="side-header">
           <h4>捉妖雷达 - Web</h4>
           <p>{{ version }}</p>
-          <p>左xocde 右百度坐标</p>
           <br/>
         </div>
         <div class="side-content">
